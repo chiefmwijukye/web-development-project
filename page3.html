@@ -1,79 +1,206 @@
-<!-- PAGE 3 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Electronics Hub – Page 3</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Electronics Hub - Page 3</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><h1>The Electronics Hub</h1></header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1.html" class="logo">THE ELECTRONICS HUB</a>
+            <ul class="nav-links">
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="sign-in-btn" onclick="openModal()">Sign In</button></li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="container">
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRCrmsj21dkWsh9fgeCuueJK25Xpbc4uzz7g&s" alt="PlayStation 5 Console" />
-        <div class="product-info">
-          <h3>PlayStation 5 Console</h3>
-          <p>Price: KSh 98,000</p>
-          <p>Seller: Samuel Kariuki – 0798765432</p>
-          <button class="purchase-btn">Purchase</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Electronics Selection</h1>
+            <p>Discover high-end gadgets and gaming equipment</p>
+            
+            <div class="search-section">
+                <div class="search-tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">New</button>
+                    <button class="tab">Used</button>
+                </div>
+                
+                <div class="search-form">
+                    <input type="text" class="search-input" placeholder="Search electronics...">
+                    <select class="search-input">
+                        <option>All Categories</option>
+                        <option>Smartphones</option>
+                        <option>Laptops</option>
+                        <option>TVs</option>
+                        <option>Audio</option>
+                    </select>
+                    <select class="search-input">
+                        <option>All Prices</option>
+                        <option>Under KSh 10,000</option>
+                        <option>KSh 10,000 - 50,000</option>
+                        <option>Above KSh 50,000</option>
+                    </select>
+                    <button class="search-btn">🔍 Search Electronics</button>
+                </div>
+                
+                <div class="category-badges">
+                    <span class="category-badge">📱 Smartphones</span>
+                    <span class="category-badge">💻 Laptops</span>
+                    <span class="category-badge">📺 TVs</span>
+                    <span class="category-badge">🎧 Audio</span>
+                    <span class="category-badge">⌚ Wearables</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqwutbD6jo03FH14VP5-qxKrVqyl4WBiLEg&s" alt="Amazon Echo Dot 4th Gen" />
-        <div class="product-info">
-          <h3>Amazon Echo Dot 4th Gen</h3>
-          <p>Price: KSh 6,500</p>
-          <p>Seller: Rose Nyambura – 0722558899</p>
-          <button class="purchase-btn">Purchase</button>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="section-header">
+            <h2 class="section-title">Page 3 - Premium Collection</h2>
+            <a href="page4.html" class="view-all-btn">Next Page →</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3Nz6GYUudK30eJ0wqxmh333Z4f7C__lz1w&s" alt="ASUS TUF Gaming Laptop" />
-        <div class="product-info">
-          <h3>ASUS TUF Gaming Laptop</h3>
-          <p>Price: KSh 115,000</p>
-          <p>Seller: Victor Muriuki – 0700223344</p>
-          <button class="purchase-btn">Purchase</button>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="price-badge">Hot Deal</div>
+                <div class="product-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtHaKj_OoNYeuh-W7Imlgs8zNW1xOWfv3qhw&s" alt="PlayStation 5 Console" class="product-image">
+                    <h3 class="product-title">PlayStation 5 Console</h3>
+                    <div class="product-price">KSh 98,000</div>
+                    <div class="product-seller">Seller: Samuel Kariuki – 0798765432</div>
+                    <div class="product-specs">
+                        <div class="spec-item">🎮 Gaming</div>
+                        <div class="spec-item">⚡ Next-Gen</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="price-badge">Smart Home</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuqwutbD6jo03FH14VP5-qxKrVqyl4WBiLEg&s" alt="Amazon Echo Dot 4th Gen" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Amazon Echo Dot 4th Gen</h3>
+                    <div class="product-price">KSh 6,500</div>
+                    <div class="product-seller">Seller: Rose Nyambura – 0722558899</div>
+                    <div class="product-specs">
+                        <div class="spec-item">🎤 Smart Speaker</div>
+                        <div class="spec-item">⚡ Alexa</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="price-badge">Gaming Pro</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3Nz6GYUudK30eJ0wqxmh333Z4f7C__lz1w&s" alt="ASUS TUF Gaming Laptop" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">ASUS TUF Gaming Laptop</h3>
+                    <div class="product-price">KSh 115,000</div>
+                    <div class="product-seller">Seller: Victor Muriuki – 0700223344</div>
+                    <div class="product-specs">
+                        <div class="spec-item">💻 Gaming</div>
+                        <div class="spec-item">⚡ RTX Graphics</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbxJp1qvGVilxXbU3pODuMB5ZCvhjjx3JjSQ&s" alt="Smart Bluetooth Scale" class="product-image">
+                    <h3 class="product-title">Smart Bluetooth Scale</h3>
+                    <div class="product-price">KSh 3,999</div>
+                    <div class="product-seller">Seller: Lucy Achieng – 0799001122</div>
+                    <div class="product-specs">
+                        <div class="spec-item">⚖️ Health</div>
+                        <div class="spec-item">⚡ Bluetooth</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="price-badge">Storage</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ViIbm5wJFfdOJJ3vdUJXDbZioSUe0ejc4A&s" alt="WD 1TB External Hard Drive" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">WD 1TB External HDD</h3>
+                    <div class="product-price">KSh 7,200</div>
+                    <div class="product-seller">Seller: Charles Oduor – 0744557788</div>
+                    <div class="product-specs">
+                        <div class="spec-item">💾 Storage</div>
+                        <div class="spec-item">⚡ 1TB</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="price-badge">Premium Audio</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxOxy-4xGZTMlc2vqBY1F7fy0k_u4rSAh4pA&s" alt="Bose Noise Cancelling Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Bose NC Headphones</h3>
+                    <div class="product-price">KSh 34,500</div>
+                    <div class="product-seller">Seller: Winnie Nduta – 0711223344</div>
+                    <div class="product-specs">
+                        <div class="spec-item">🎧 Headphones</div>
+                        <div class="spec-item">⚡ Noise Cancel</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSavA7CGtM-noxaOk_bK0uSYgEMCyK4eYPpCg&s" alt="Smart Bluetooth Scale" />
-        <div class="product-info">
-          <h3>Smart Bluetooth Scale</h3>
-          <p>Price: KSh 3,999</p>
-          <p>Seller: Lucy Achieng – 0799001122</p>
-          <button class="purchase-btn">Purchase</button>
+
+        <div class="pagination">
+            <a href="page2.html">← Previous</a>
+            <a href="page1.html">1</a>
+            <a href="page2.html">2</a>
+            <a href="#" style="background: #4c51bf; color: white;">3</a>
+            <a href="page4.html">4</a>
+            <a href="page4.html">Next →</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1ViIbm5wJFfdOJJ3vdUJXDbZioSUe0ejc4A&s" alt="WD 1TB External Hard Drive" />
-        <div class="product-info">
-          <h3>WD 1TB External HDD</h3>
-          <p>Price: KSh 7,200</p>
-          <p>Seller: Charles Oduor – 0744557788</p>
-          <button class="purchase-btn">Purchase</button>
+    </main>
+
+    <!-- Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="purchase-btn">Sign In</button>
+            </form>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxOxy-4xGZTMlc2vqBY1F7fy0k_u4rSAh4pA&s" alt="Bose Noise Cancelling Headphones" />
-        <div class="product-info">
-          <h3>Bose NC Headphones</h3>
-          <p>Price: KSh 34,500</p>
-          <p>Seller: Winnie Nduta – 0711223344</p>
-          <button class="purchase-btn">Purchase</button>
-        </div>
-      </div>
     </div>
 
-    <div class="pagination">
-      <a href="page2.html">« Previous</a>
-      <a href="page4.html">Next »</a>
-    </div>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
-
