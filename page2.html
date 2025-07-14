@@ -1,78 +1,204 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Electronics Hub – Page 2</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Electronics Hub - Page 2</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header><h1>The Electronics Hub</h1></header>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="page1.html" class="logo">THE ELECTRONICS HUB</a>
+            <ul class="nav-links">
+                <li><a href="page1.html">Home</a></li>
+                <li><a href="#">Listings</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button class="sign-in-btn" onclick="openModal()">Sign In</button></li>
+            </ul>
+        </div>
+    </nav>
 
-  <div class="container">
-    <div class="product-grid">
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD0pHcpTYoC4xvlbFjN-CslU92jviETX5leg&s" alt="Canon EOS 2000D Camera" />
-        <div class="product-info">
-          <h3>Canon EOS 2000D</h3>
-          <p>Price: KSh 49,000</p>
-          <p>Seller: Diana Njeri – 0712345678</p>
-          <button class="purchase-btn">Purchase</button>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>More Amazing Electronics</h1>
+            <p>Continue discovering great deals on quality electronics</p>
+            
+            <div class="search-section">
+                <div class="search-tabs">
+                    <button class="tab active">All</button>
+                    <button class="tab">New</button>
+                    <button class="tab">Used</button>
+                </div>
+                
+                <div class="search-form">
+                    <input type="text" class="search-input" placeholder="Search electronics...">
+                    <select class="search-input">
+                        <option>All Categories</option>
+                        <option>Smartphones</option>
+                        <option>Laptops</option>
+                        <option>TVs</option>
+                        <option>Audio</option>
+                    </select>
+                    <select class="search-input">
+                        <option>All Prices</option>
+                        <option>Under KSh 10,000</option>
+                        <option>KSh 10,000 - 50,000</option>
+                        <option>Above KSh 50,000</option>
+                    </select>
+                    <button class="search-btn">🔍 Search Electronics</button>
+                </div>
+                
+                <div class="category-badges">
+                    <span class="category-badge">📱 Smartphones</span>
+                    <span class="category-badge">💻 Laptops</span>
+                    <span class="category-badge">📺 TVs</span>
+                    <span class="category-badge">🎧 Audio</span>
+                    <span class="category-badge">⌚ Wearables</span>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="product">
-       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgviYzjfdeN1yFBTVuMGHA5RHcUGIignkDYA&s" alt="Lenovo IdeaPad 3" />
-        <div class="product-info">
-          <h3>Lenovo IdeaPad 3</h3>
-          <p>Price: KSh 38,500</p>
-          <p>Seller: George Odhiambo – 0700112233</p>
-          <button class="purchase-btn">Purchase</button>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="section-header">
+            <h2 class="section-title">Page 2 - Electronics Collection</h2>
+            <a href="page3.html" class="view-all-btn">Next Page →</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJILfIM_gHasPyRV1INbV6QqVThSdyVuw1-Q&s" alt="Anker Power Bank" />
-        <div class="product-info">
-          <h3>Anker Power Bank</h3>
-          <p>Price: KSh 3,200</p>
-          <p>Seller: Janet Wanja – 0722345678</p>
-          <button class="purchase-btn">Purchase</button>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="price-badge">Great Deal</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhx-HATNpM-mM8Id-tEkjIstvb6pFg24JUeQ&s" alt="Canon EOS 2000D Camera" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Canon EOS 2000D</h3>
+                    <div class="product-price">KSh 49,000</div>
+                    <div class="product-seller">Seller: Diana Njeri – 0712345678</div>
+                    <div class="product-specs">
+                        <div class="spec-item">📷 Camera</div>
+                        <div class="spec-item">⚡ DSLR</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="price-badge">Popular</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEUNfyIVK_k_ik01uTGN21ZGni4RLUp_nV_Q&s" alt="Lenovo IdeaPad 3" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Lenovo IdeaPad 3</h3>
+                    <div class="product-price">KSh 38,500</div>
+                    <div class="product-seller">Seller: George Odhiambo – 0700112233</div>
+                    <div class="product-specs">
+                        <div class="spec-item">💻 Laptop</div>
+                        <div class="spec-item">⚡ Core i3</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWsUSH5rNsBgvpie04KJqn_2RThgvWBVLNBQ&s" alt="Anker Power Bank" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Anker Power Bank</h3>
+                    <div class="product-price">KSh 3,200</div>
+                    <div class="product-seller">Seller: Janet Wanja – 0722345678</div>
+                    <div class="product-specs">
+                        <div class="spec-item">🔋 Power Bank</div>
+                        <div class="spec-item">⚡ 10000mAh</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="price-badge">Great Price</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgdOry8KNPnW_jKcd7GX2Mv5VEudEAKQMaIQ&s" alt="Huawei MatePad T10" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Huawei MatePad T10</h3>
+                    <div class="product-price">KSh 21,999</div>
+                    <div class="product-seller">Seller: Tom Musyoka – 0733445566</div>
+                    <div class="product-specs">
+                        <div class="spec-item">📱 Tablet</div>
+                        <div class="spec-item">⚡ Android</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-info">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8CuxifPnaE4os23xKPGAD_y0D4TSD8F-MiQ&s" alt="Samsung Galaxy A14" class="product-image">
+                    <h3 class="product-title">Samsung Galaxy A14</h3>
+                    <div class="product-price">KSh 18,000</div>
+                    <div class="product-seller">Seller: Anita Kibe – 0711223344</div>
+                    <div class="product-specs">
+                        <div class="spec-item">📱 Smartphone</div>
+                        <div class="spec-item">⚡ Android</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-info">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdr5vR4al5syWGucs5RlztpWGm5DmNsitkZQ&s" alt="Logitech Wireless Mouse" class="product-image">
+                    <h3 class="product-title">Logitech Wireless Mouse</h3>
+                    <div class="product-price">KSh 1,500</div>
+                    <div class="product-seller">Seller: Daniel Kiptoo – 0744556677</div>
+                    <div class="product-specs">
+                        <div class="spec-item">🖱️ Mouse</div>
+                        <div class="spec-item">⚡ Wireless</div>
+                        <div class="spec-item">📍 Nairobi</div>
+                    </div>
+                    <button class="purchase-btn">Purchase</button>
+                    <button class="view-details-btn">View Details →</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOQQKjmhu8B0zqgpVEqvSfGoPWDoeSKd5kWQ&s" alt="Huawei MatePad T10" />
-        <div class="product-info">
-          <h3>Huawei MatePad T10</h3>
-          <p>Price: KSh 21,999</p>
-          <p>Seller: Tom Musyoka – 0733445566</p>
-          <button class="purchase-btn">Purchase</button>
-         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtzOP0hMh5SZ1BQR1A5k8yYbEDjGZz3Sjcuw&s" alt="Samsung Galaxy A14" />
-        <div class="product-info">
-          <h3>Samsung Galaxy A14</h3>
-          <p>Price: KSh 18,000</p>
-          <p>Seller: Anita Kibe – 0711223344</p>
-          <button class="purchase-btn">Purchase</button>
+
+        <div class="pagination">
+            <a href="page1.html">← Previous</a>
+            <a href="page1.html">1</a>
+            <a href="#" style="background: #4c51bf; color: white;">2</a>
+            <a href="page3.html">3</a>
+            <a href="page4.html">4</a>
+            <a href="page3.html">Next →</a>
         </div>
-      </div>
-      <div class="product">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAAaPNOOHVhWB3c8wDpI5-rnGPKp4KfexLyQ&s" alt="Logitech Wireless Mouse" />
-        <div class="product-info">
-          <h3>Logitech Wireless Mouse</h3>
-          <p>Price: KSh 1,500</p>
-          <p>Seller: Daniel Kiptoo – 0744556677</p>
-          <button class="purchase-btn">Purchase</button>
+    </main>
+
+    <!-- Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2>Sign In</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="purchase-btn">Sign In</button>
+            </form>
         </div>
-      </div>
     </div>
 
-    <div class="pagination">
-      <a href="page1.html">« Previous</a>
-      <a href="page3.html">Next »</a>
-     </div>
-  </div>
+    <script src="script.js"></script>
 </body>
 </html>
